@@ -23,16 +23,16 @@ public:
     void degreePrinted(Degree students_degree);
 
 private:
-    int REDACTED;
-    int REDACTED;
-    Student **REDACTED;
-    string REDACTED;
-    string REDACTED;
-    string REDACTED;
-    string REDACTED;
-    string REDACTED;
-    int *REDACTED;
-    string REDACTED;
+    int lastInput;
+    int maxRosterSize;
+    Student **stu;
+    string studentID;
+    string students_firstName;
+    string students_lastName;
+    string students_email;
+    string students_age;
+    int *students_courseDays;
+    string students_degree;
 
     ~Roster();
 };

@@ -21,6 +21,7 @@ public:
     string GetEmail();
     string GetAge();
     int *GetCourseDays();
+    Degree GetDegree();
 
     // Mutators
     void SetStudentID(string studentID);
@@ -31,6 +32,7 @@ public:
     void SetCourseDays(int students_courseDays[]);
     void SetDegree(Degree students_degree);
 
+    void PrintStudentsData();
     ~Student();
 
 protected:

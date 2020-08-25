@@ -27,7 +27,14 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="03e46f91-5316-452e-9b08-9d2b5fb2b185" name="Default Changelist" comment="WGU C867 Assessment" />
+    <list default="true" id="03e46f91-5316-452e-9b08-9d2b5fb2b185" name="Default Changelist" comment="WGU C867 Assessment">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/University_Migrate_Program/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/University_Migrate_Program/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/University_Migrate_Program/roster.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/University_Migrate_Program/roster.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/University_Migrate_Program/roster.h" beforeDir="false" afterPath="$PROJECT_DIR$/University_Migrate_Program/roster.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/University_Migrate_Program/student.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/University_Migrate_Program/student.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/University_Migrate_Program/student.h" beforeDir="false" afterPath="$PROJECT_DIR$/University_Migrate_Program/student.h" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -65,6 +72,8 @@
       <option name="presentableId" value="Default" />
       <updated>1597273843208</updated>
       <workItem from="1597273844254" duration="137000" />
+      <workItem from="1597276454567" duration="626000" />
+      <workItem from="1598315049425" duration="2854000" />
     </task>
     <task id="LOCAL-00001" summary="WGU C867 Assessment">
       <created>1597273934072</created>
@@ -89,6 +98,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="WGU C867 Assessment" />
