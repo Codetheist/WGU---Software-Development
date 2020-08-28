@@ -4,85 +4,83 @@
 
 #include "student.h"
 
-Student::Students() {
-    student_ID = "";
-    stu_firstNames = "";
-    stu_lastNames = "";
-    stu_emails = "";
-    stu_ages = "";
-    amountOfDaysInCourse = int[];
-}
-
-Student::Students(string studentID, string students_firstName, string students_lastName, string students_email, int students_age, int* students_courseDays[], Degree students_degree) {
+Student::Students(string studentID, string students_firstName, string students_lastName, string students_email, int students_age, int daysIn[], DegreeProgram students_degree) {
     student_ID = studentID;
     stu_firstNames = students_firstName;
     stu_lastNames = students_lastName;
     stu_emails = students_email;
     stu_ages = students_age;
-    amountOfDaysInCourse = int[];
-    for (int i = 0; i < amountOfDaysInCourse.size(); ++i) {
-        amountOfDaysInCourse = students_courseDays[i];
+    for (int i = 0; i < 3; ++i) {
+        students_courseDays[i] = daysIn[i];
     }
 }
 
+void Student::PrintStudentsData() {
+    cout << "Student ID: " << studentID;
+    cout << "\t First Name: " << students_firstName << "\t Last Name: " << students_lastName;
+    cout << "\t Age: " << students_age << "\t : ";
+    cout << "{" << students_courseDays[0] << ", " << students_courseDays[1] << ", " << students_courseDays[2] << "}";
+    cout << " Degree Program: " << students_degree << "." endl;
+}
+
 //Accessors
-string GetStudentsID() {
+string Student::GetStudentsID() {
     return studentID;
 }
 
-string GetFirstName() {
+string Student::GetFirstName() {
     return students_firstName;
 }
 
-string GetLastName() {
+string Student::GetLastName() {
     return students_lastName;
 }
 
-string GetEmail() {
+string Student::GetEmail() {
     return students_email;
 }
 
-string GetAge() {
+string Student::GetAge() {
     return students_age;
 }
 
-int *GetCourseDays() {
+int *Student::GetCourseDays() {
     return students_courseDays;
 }
 
-Degree Student::GetDegree() {
+DegreeProgram Student::GetDegree() {
     return students_degree;
 }
 
 //Mutators
-void SetStudentID(string studentID) {
+void Student::SetStudentID(string studentID) {
     student_ID = studentID;
     return;
 }
 
-void SetFirstName(string students_firstName) {
+void Student::SetFirstName(string students_firstName) {
     stu_firstNames = students_firstName;
     return;
 }
 
-void SetLastName(string students_lastName) {
+void Student::SetLastName(string students_lastName) {
     stu_lastNames = students_lastName;
     return;
 }
 
-void SetEmail(string students_email) {
+void Student::SetEmail(string students_email) {
     stu_emails = students_email;
     return;
 }
 
-void SetAge(int students_age) {
+void Student::SetAge(int students_age) {
     stu_ages = students_age;
     return;
 }
 
-void SetCourseDays(int students_courseDays[]) {
+void Student::SetCourseDays(int daysIn[]) {
 
-    for (int i = 0; i < amountOfDaysInCourse.size(); ++i) {
-        amountOfDaysInCourse = students_courseDays[i];
+    for (int i = 0; i < 3; ++i) {
+        students_courseDay[i] = daysIn[i];
     }
 }

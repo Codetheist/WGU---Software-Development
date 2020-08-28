@@ -15,12 +15,12 @@ using namespace std;
 class Roster {
 public:
     inputRoster(int maxRosterSize);
-    void gatheringStudentInfo(string studentID, string students_firstName, string students_lastName, string students_email, int students_age, int students_courseDays[], Degree students_degree);
+    void gatheringStudentInfo(string studentID, string students_firstName, string students_lastName, string students_email, int students_age, int daysIn[], DegreeProgram students_degree);
     void delete(string studentID);
     void allPrinted();
     void daysInCourse(string studentID);
     void nonValidEmailPrinted();
-    void degreePrinted(Degree students_degree);
+    void degreePrinted(DegreeProgram students_degree);
 
 private:
     int lastInput;

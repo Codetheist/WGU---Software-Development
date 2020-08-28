@@ -8,3 +8,4 @@
 enum DegreeProgram { SECURITY, NETWORK, SOFTWARE };
 
 #endif //UNIVERSITY_MIGRATE_PROGRAM_DEGREE_H
+//Find a way to print the string for degree

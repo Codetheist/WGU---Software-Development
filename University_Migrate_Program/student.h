@@ -12,7 +12,7 @@ using namespace std;
 
 class Student {
 public:
-    Students(string studentID, string students_firstName, string students_lastName, string students_email, int students_age, int* students_courseDays[], Degree students_degree)
+    Students(string studentID, string students_firstName, string students_lastName, string students_email, int students_age, int daysIn[], DegreeProgram students_degree)
 
     //Accessors
     string GetStudentsID();
@@ -20,8 +20,8 @@ public:
     string GetLastName();
     string GetEmail();
     string GetAge();
-    int *GetCourseDays();
-    Degree GetDegree();
+    int *GetCourseDays[3];
+    DegreeProgram GetDegree();
 
     // Mutators
     void SetStudentID(string studentID);
@@ -29,20 +29,20 @@ public:
     void SetLastName(string students_lastName);
     void SetEmail(string students_email);
     void SetAge(int students_age);
-    void SetCourseDays(int students_courseDays[]);
-    void SetDegree(Degree students_degree);
+    void SetCourseDays(int students_courseDays[3]);
+    void SetDegree(DegreeProgram students_degree);
 
     void PrintStudentsData();
     ~Student();
 
-protected:
+private:
     string studentID;
     string students_firstName;
     string students_lastName;
     string students_email;
     int students_age;
-    int students_courseDays[];
-    Degree students_degree;
+    int students_courseDays[3];
+    DegreeProgram students_degree;
 };
 
 #endif //UNIVERSITY_MIGRATE_PROGRAM_STUDENT_H
