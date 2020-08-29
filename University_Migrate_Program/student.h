@@ -13,7 +13,8 @@ using namespace std;
 class Student
 {
 public:
-    Students(string studentID, string students_firstName, string students_lastName, string students_email, int students_age, int daysIn[], DegreeProgram stringDegreeProgram);
+    Student();
+    Student(string studentID, string students_firstName, string students_lastName, string students_email, int students_age, int daysIn[], DegreeProgram stringDegreeProgram);
 
     //Accessors
     string GetStudentsID();

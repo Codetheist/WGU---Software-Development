@@ -32,28 +32,28 @@ int main()
 
     for (int i = 0; i < maxStudents; i++)
     {
-        classRoster->gatheringStudentInfo(studentData[i]);
+        classRoster->gatheringStudentInfo(studentData[i]->getSt);
     }
 
     cout << "Student Roster:" << endl;
-    classRoster.printAll();
+    classRoster->allPrinted();
 
     cout << endl;
 
     cout << "Invalid Emails:" << endl;
-    classRoster.nonValidEmailPrinted();
+    classRoster->nonValidEmailPrinted();
 
     cout << "Students average of days in course:" << endl;
     for (int i = 0; i < maxStudents; i++)
     {
-        // classRoster->daysInCourseAvg(classRoster->)
+        classRoster->daysInCourseAvg(classRoster->)
     }
 
-    classRoster.degreePrinted(SOFTWARE);
+    classRoster->degreePrinted(SOFTWARE);
 
-    classRoster.deleteStudentInfo("A3");
+    classRoster->deleteStudentInfo("A3");
 
-    classRoster.allPrinted();
+    classRoster->allPrinted();
 
     classRoster->deleteStudentInfo("A3");
 

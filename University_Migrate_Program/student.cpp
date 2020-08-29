@@ -10,12 +10,12 @@ using namespace std;
 
 Student::Students(string studentID, string students_firstName, string students_lastName, string students_email, int students_age, int daysIn[], DegreeProgram stringDegreeProgram)
 {
-    student_ID = studentID;
-    stu_firstNames = students_firstName;
-    stu_lastNames = students_lastName;
-    stu_emails = students_email;
-    stu_ages = students_age;
-    stu_degree = DegreeProgram::stringDegreeProgram;
+    string stu_ID = studentID;
+    string stu_firstNames = students_firstName;
+    string stu_lastNames = students_lastName;
+    string stu_emails = students_email;
+    int stu_ages = students_age;
+    DegreeProgram stu_degree = stringDegreeProgram;
     for (int i = 0; i < 3; ++i)
     {
         students_courseDays[i] = daysIn[i];
@@ -28,7 +28,7 @@ void Student::PrintStudentsData()
     cout << "\t First Name: " << students_firstName << "\t Last Name: " << students_lastName;
     cout << "\t Age: " << students_age << "\t : ";
     cout << "{" << students_courseDays[0] << ", " << students_courseDays[1] << ", " << students_courseDays[2] << "}";
-    cout << " Degree Program: " << students_degree << "." endl;
+    cout << " Degree Program: " << stringDegreeProgram << "." << endl;
 }
 
 //Accessors
@@ -64,49 +64,50 @@ int *Student::GetCourseDays()
 
 DegreeProgram Student::GetDegree()
 {
-    return students_degree;
+    return stringDegreeProgram;
 }
 
 //Mutators
 void Student::SetStudentID(string studentID)
 {
-    student_ID = studentID;
+    string stu_ID = studentID;
     return;
 }
 
 void Student::SetFirstName(string students_firstName)
 {
-    stu_firstNames = students_firstName;
+    string stu_firstNames = students_firstName;
     return;
 }
 
 void Student::SetLastName(string students_lastName)
 {
-    stu_lastNames = students_lastName;
+    string stu_lastNames = students_lastName;
     return;
 }
 
 void Student::SetEmail(string students_email)
 {
-    stu_emails = students_email;
+    string stu_emails = students_email;
     return;
 }
 
 void Student::SetAge(int students_age)
 {
-    stu_ages = students_age;
+    int stu_ages = students_age;
     return;
 }
 
 void Student::SetDegree(DegreeProgram stringDegreeProgram)
 {
 
-    stu_degree = students_degree;
+    DegreeProgram stu_degree = stringDegreeProgram;
     return;
 }
 
 void Student::SetCourseDays(int daysIn[])
 {
+  int students_courseDay[3];
 
     for (int i = 0; i < 3; ++i)
     {
