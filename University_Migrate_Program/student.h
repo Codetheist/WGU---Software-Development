@@ -10,9 +10,10 @@
 #include <string>
 using namespace std;
 
-class Student {
+class Student
+{
 public:
-    Students(string studentID, string students_firstName, string students_lastName, string students_email, int students_age, int daysIn[], DegreeProgram students_degree)
+    Students(string studentID, string students_firstName, string students_lastName, string students_email, int students_age, int daysIn[], DegreeProgram stringDegreeProgram);
 
     //Accessors
     string GetStudentsID();
@@ -30,7 +31,7 @@ public:
     void SetEmail(string students_email);
     void SetAge(int students_age);
     void SetCourseDays(int students_courseDays[3]);
-    void SetDegree(DegreeProgram students_degree);
+    void SetDegree(DegreeProgram stringDegreeProgram);
 
     void PrintStudentsData();
     ~Student();
@@ -42,7 +43,7 @@ private:
     string students_email;
     int students_age;
     int students_courseDays[3];
-    DegreeProgram students_degree;
+    DegreeProgram stringDegreeProgram;
 };
 
 #endif //UNIVERSITY_MIGRATE_PROGRAM_STUDENT_H

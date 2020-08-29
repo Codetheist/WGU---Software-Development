@@ -12,27 +12,29 @@
 #include "degree.h"
 using namespace std;
 
-class Roster {
+class Roster
+{
 public:
+    Roster();
     inputRoster(int maxRosterSize);
-    void gatheringStudentInfo(string studentID, string students_firstName, string students_lastName, string students_email, int students_age, int daysIn[], DegreeProgram students_degree);
-    void delete(string studentID);
+    void gatheringStudentInfo(string studentID, string students_firstName, string students_lastName, string students_email, int students_age, int daysIn[], DegreeProgram stringDegreeProgram);
+    void deleteStudentInfo(string studentID);
     void allPrinted();
-    void daysInCourse(string studentID);
+    void daysInCourseAvg(string studentID);
     void nonValidEmailPrinted();
-    void degreePrinted(DegreeProgram students_degree);
+    void degreePrinted(DegreeProgram stringDegreeProgram);
 
 private:
     int lastInput;
     int maxRosterSize;
-    Student **stu;
+    Student **stu_class_array;
     string studentID;
     string students_firstName;
     string students_lastName;
     string students_email;
     string students_age;
     int *students_courseDays;
-    string students_degree;
+    string stringDegreeProgram;
 
     ~Roster();
 };

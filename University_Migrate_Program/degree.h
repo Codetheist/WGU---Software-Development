@@ -5,7 +5,13 @@
 #ifndef UNIVERSITY_MIGRATE_PROGRAM_DEGREE_H
 #define UNIVERSITY_MIGRATE_PROGRAM_DEGREE_H
 
-enum DegreeProgram { SECURITY, NETWORK, SOFTWARE };
+enum DegreeProgram
+{
+    SECURITY,
+    NETWORK,
+    SOFTWARE
+};
+
+static const string stringDegreeProgram[] = {"SECURITY", "NETWORK", "SOFTWARE"};
 
 #endif //UNIVERSITY_MIGRATE_PROGRAM_DEGREE_H
-//Find a way to print the string for degree
