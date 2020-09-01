@@ -1,3 +1,4 @@
+
 /*
  * Created by Antoine on 8/8/2020.
 */
@@ -10,44 +11,86 @@
 
 using namespace std;
 
-Roster::Roster()
+Roster::Roster () 
 {
     this->lastInput = -1;
     this->maxRosterSize = 0;
-    this->stu_class_array = nullptr;
+    this->classRosterArray = nullptr;
 }
 
-Roster::Roster(int maxRosterSize)
+Roster::Roster (int maxRosterSize) 
 {
     this->maxRosterSize = maxRosterSize;
     this->lastInput = -1;
-    this->stu_class_array = new Student *[maxRosterSize];
+    this->classRosterArray = new Student * [maxRosterSize];
 };
 
-void Roster::gatheringStudentInfo(int studentID)
-{
-
-    if (/* condition */)
-    {
-        /* code */
+void Roster::parseAndAdd(int students_row) {
+    if (lastInput < maxRosterSize) {
+        ++lastInput;
     }
 
-    gatheringStudentInfo(string studentID, string students_firstName, string students_lastName, string students_email, int students_age, int daysIn[], DegreeProgram stringDegreeProgram);
+    int rightBreak = students_row.find(",");
+    string studentID = students_row.substr(0, rightBreak);
+
+    int leftBreak = rightBreak + 1;
+    rightBreak = students_row.find(",", leftBreak);
+    string students_firstName = students_row.substr(leftBreak, rightBreak - leftBreak);
+
+    leftBreak = rightBreak + 1;
+    rightBreak = students_row.find(",", leftBreak);
+    string students_lastName = students_row.substr(leftBreak, rightBreak - leftBreak);
+
+    leftBreak = rightBreak + 1;
+    rightBreak = students_row.find(",", leftBreak);
+    string students_email = students_row.substr(leftBreak, rightBreak - leftBreak);
+
+    leftBreak = rightBreak + 1;
+    rightBreak = students_row.find(",", leftBreak);
+    string place_age =  = students_row.substr(leftBreak, rightBreak - leftBreak);
+    int students_age = stoi(place_age);
+
+    leftBreak = rightBreak + 1;
+    rightBreak = students_row.find(",", leftBreak);
+    int students_courseDays = stoi(students_row.substr(leftBreak, rightBreak - leftBreak));
+
+    leftBreak = rightBreak + 1;
+    rightBreak = students_row.find(",", leftBreak);
+    int students_courseDays1 = stoi(students_row.substr(leftBreak, rightBreak - leftBreak));
+
+    leftBreak = rightBreak + 1;
+    rightBreak = students_row.find(",", leftBreak);
+    int students_courseDays2 = stoi(students_row.substr(leftBreak, rightBreak - leftBreak));
+
+    leftBreak = rightBreak + 1;
+    rightBreak = students_row.find(",", leftBreak);
+    DegreeProgram stringDegreeProgram
+    string degrees = students_row.substr(leftBreak, rightBreak - leftBreak);
+    if (degrees == "SOFTWARE") {
+        stringDegreeProgram = DegreeProgram::SOFTWARE;
+    } else if (degress == "SECURITY") {
+        stringDegreeProgram = DegreeProgram::SECURITY;
+    }else if (degrees == "NETWORK") {
+        stringDegreeProgram = DegreeProgram::NETWORK;
+    }
+
+    add(studentID, students_firstName, students_lastName, students_email, students_age, students_courseDays, students_courseDays1, students_courseDays2, stringDegreeProgram);
 }
 
-void Roster::deleteStudentInfo(string studentID)
-{
+bool Roster::remove(int studentID) {
 
     bool isExisted = false;
+
     for (int i = 0; i < lastInput; ++i)
     {
-        if (stu_class_array[i]->GetStudentsID() == studentID)
+        if (classRosterArray[i]->GetStudentsID() == studentID)
         {
             isExisted = true;
-            delete this->stu_class_array[i];
+            delete this->classRosterArray[i];
 
             cout << "Student ID number: " << studentID << " has been removed." << endl;
-            stu_class_array[i] = stu_class_array[lastInput];
+            classRosterArray[i] = classRosterArray[lastInput];
+
             --lastInput;
         }
 
@@ -55,76 +98,70 @@ void Roster::deleteStudentInfo(string studentID)
         {
             cout << "Student ID number: " << studentID << " does not exist." << endl;
         }
-
-        return isExisted;
     }
 }
 
-void Roster::allPrinted()
-{
-    for (int i = 0; i <= lastInput; i++)
-    {
-        stu_class_array[i]->PrintStudentsData();
-    }
-}
+void Roster::printAverageDaysInCourse(int studentID) {
 
-void Roster::daysInCourseAvg(string studentID)
-{
-
-    int getAvg = 0;
+    int getAve = 0;
 
     for (int i = 0; i < 5; i++)
     {
-        string stu_temp_id = stu_class_array[i]->GetStudentsID();
-        if (stu_temp_id = studentID)
+        string stu_temp_id = classRosterArray[i]->GetStudentsID();
+
+        if (stu_temp_id == studentID)
         {
-            getAvg = ((stu_class_array[i]->GetCourseDays()[0] + stu_class_array[i]->GetCourseDays()[1] + stu_class_array[i]->GetCourseDays()[2]) / 3);
+            getAvg = ((classRosterArray[i]->GetCourseDays()[0] + classRosterArray[i]->GetCourseDays()[1] + classRosterArray[i]->GetCourseDays()[2]) / 3);
+
             cout << "The average of student ID number: " << studentID << " is: " << getAvg << endl;
         }
     }
 }
 
-void Roster::nonValidEmailPrinted()
-{
+void Roster::printInvalidEmails() {
+
     for (int i = 0; i < 5; i++)
     {
-        string stu_temp_email = stu_class_array[i]->GetEmail();
-        if ((stu_temp_email.find("@") == string::npos || stu_temp_email.find(".") == string::npos) || (stu_temp_email.find(" ") != string::npos))
+        string stu_temp_email = classRosterArray[i]->GetEmail();
+
+        if ((stu_temp_email.find ("@") == string::npos || stu_temp_email.find (".") == string::npos) || (stu_temp_email.find (" ") != string::npos))
         {
             cout << stu_temp_email << endl;
         }
     }
 }
 
-void Roster::degreePrinted(DegreeProgram stringDegreeProgram)
-{
-    for (int i = 0; i < 5; i++)
-    {
-        DegreeProgram stu_temp_degree = stu_class_array[i]->GetDegree();
-        if (stu_temp_degree == stringDegreeProgram)
-        {
-            stu_class_array[i]->PrintStudentsData();
+void Roster::printByDegreeProgram(DegreeProgram stringDegreeProgram) {
+    for (int i = 0; i < 5; i++) {
+
+        DegreeProgram stu_temp_degree = classRosterArray[i]->GetDegree();
+
+        if (stu_temp_degree == stringDegreeProgram) {
+            classRosterArray[i]->print();
         }
     }
 }
 
-void Roster::gatheringStudentInfo(string studentID, string students_firstName, string students_lastName, string students_email, int students_age, int daysIn[], DegreeProgram stringDegreeProgram)
-{
+void Roster::add(int studentID, int students_firstName, int students_lastName, int students_email, int students_age,
+                 int students_courseDays, int students_courseDays1, int students_courseDays2,
+                 DegreeProgram stringDegreeProgram) {
 
-    for (int i = 0; i < 3; ++i)
-    {
-        students_courseDay[i] = daysIn[i];
-    }
+    int students_courseDay[3];
 
-    stu_class_array[lastInput] = new Student(studentID, students_firstName, students_lastName, students_email, students_age, daysIn[], stringDegreeProgram);
+    students_courseDay[0] = students_courseDays;
+    students_courseDay[1] = students_courseDays1;
+    students_courseDay[2] = students_courseDays2;
+
+    classRosterArray[lastInput] = new Student (studentID, students_firstName, students_lastName, students_email, students_age, students_courseDay, stringDegreeProgram);
 }
 
-Roster::~Roster()
-{
-    for (int i = 0; i < 5; i++)
-    {
-        delete stu_class_array[i];
-    }
+Student* Roster::GetInfo(int lastInput) {
+    return classRosterArray[lastInput];
+}
 
-    delete stu_class_array;
+Roster::~Roster() {
+    for (int i = 0; i < 5; ++i) {
+        delete classRosterArray[i];
+    }
+    delete classRosterArray;
 }

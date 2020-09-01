@@ -27,7 +27,15 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="03e46f91-5316-452e-9b08-9d2b5fb2b185" name="Default Changelist" comment="Updated WGU C867 Assessment" />
+    <list default="true" id="03e46f91-5316-452e-9b08-9d2b5fb2b185" name="Default Changelist" comment="Updated WGU C867 Assessment">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/University_Migrate_Program/degree.h" beforeDir="false" afterPath="$PROJECT_DIR$/University_Migrate_Program/degree.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/University_Migrate_Program/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/University_Migrate_Program/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/University_Migrate_Program/roster.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/University_Migrate_Program/roster.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/University_Migrate_Program/roster.h" beforeDir="false" afterPath="$PROJECT_DIR$/University_Migrate_Program/roster.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/University_Migrate_Program/student.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/University_Migrate_Program/student.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/University_Migrate_Program/student.h" beforeDir="false" afterPath="$PROJECT_DIR$/University_Migrate_Program/student.h" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -61,7 +69,8 @@
       <workItem from="1597276454567" duration="626000" />
       <workItem from="1598315049425" duration="2977000" />
       <workItem from="1598578266403" duration="3435000" />
-      <workItem from="1598661705270" duration="639000" />
+      <workItem from="1598661705270" duration="964000" />
+      <workItem from="1598923163600" duration="3168000" />
     </task>
     <task id="LOCAL-00001" summary="WGU C867 Assessment">
       <created>1597273934072</created>
@@ -91,7 +100,21 @@
       <option name="project" value="LOCAL" />
       <updated>1598661722203</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Updated WGU C867 Assessment">
+      <created>1598662861062</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1598662861062</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Updated WGU C867 Assessment">
+      <created>1598662911818</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1598662911818</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,9 +134,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="WGU C867 Assessment" />
-    <MESSAGE value="Updated WGU C867 Assessment" />
     <MESSAGE value="Final Submission" />
-    <option name="LAST_COMMIT_MESSAGE" value="Final Submission" />
+    <MESSAGE value="Updated WGU C867 Assessment" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated WGU C867 Assessment" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598581337679">
@@ -124,10 +147,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1597273866638" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1598661727553">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1598662917422">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1598661727553" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1598662917422" />
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1598581854563">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -7,11 +7,12 @@
 
 enum DegreeProgram
 {
+    None,
     SECURITY,
     NETWORK,
     SOFTWARE
 };
 
-static const string stringDegreeProgram[] = {"SECURITY", "NETWORK", "SOFTWARE"};
+//const string stringDegreeProgram[] = {"SECURITY", "NETWORK", "SOFTWARE"};
 
 #endif //UNIVERSITY_MIGRATE_PROGRAM_DEGREE_H

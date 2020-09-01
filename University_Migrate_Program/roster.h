@@ -7,7 +7,6 @@
 
 #include <iostream>
 #include <string>
-#include "roster.h"
 #include "student.h"
 #include "degree.h"
 using namespace std;
@@ -15,28 +14,23 @@ using namespace std;
 class Roster
 {
 public:
-    Roster();
-    inputRoster(int maxRosterSize);
-    void gatheringStudentInfo(string studentID, string students_firstName, string students_lastName, string students_email, int students_age, int daysIn[], DegreeProgram stringDegreeProgram);
-    void deleteStudentInfo(string studentID);
-    void allPrinted();
-    void daysInCourseAvg(string studentID);
-    void nonValidEmailPrinted();
-    void degreePrinted(DegreeProgram stringDegreeProgram);
+  Roster();
+  Roster(int maxRosterSize);
+  Student** classRosterArray;
+  void parseAndAdd(string students_row);
+  void add(string studentID, string students_firstName, string students_lastName, string students_email, int students_age, int students_courseDays, int students_courseDays1, int students_courseDays2, DegreeProgram stringDegreeProgram);
+  bool remove(string studentID);
+  void printAll();
+  void printAverageDaysInCourse(string studentID);
+  void printInvalidEmails();
+  void printByDegreeProgram(DegreeProgram stringDegreeProgram);
 
-private:
-    int lastInput;
-    int maxRosterSize;
-    Student **stu_class_array;
-    string studentID;
-    string students_firstName;
-    string students_lastName;
-    string students_email;
-    string students_age;
-    int *students_courseDays;
-    string stringDegreeProgram;
+  Student* GetInfo(int lastInput);
 
-    ~Roster();
+  int lastInput;
+  int maxRosterSize;
+  
+  ~Roster();
 };
 
 #endif //UNIVERSITY_MIGRATE_PROGRAM_ROSTER_H

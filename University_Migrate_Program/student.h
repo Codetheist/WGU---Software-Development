@@ -14,15 +14,15 @@ class Student
 {
 public:
     Student();
-    Student(string studentID, string students_firstName, string students_lastName, string students_email, int students_age, int daysIn[], DegreeProgram stringDegreeProgram);
+    Student(string studentID, string students_firstName, string students_lastName, string students_email, int students_age, int students_courseDays[], DegreeProgram stringDegreeProgram);
 
     //Accessors
     string GetStudentsID();
     string GetFirstName();
     string GetLastName();
     string GetEmail();
-    string GetAge();
-    int *GetCourseDays[3];
+    int GetAge();
+    int* GetCourseDays();
     DegreeProgram GetDegree();
 
     // Mutators
@@ -31,10 +31,10 @@ public:
     void SetLastName(string students_lastName);
     void SetEmail(string students_email);
     void SetAge(int students_age);
-    void SetCourseDays(int students_courseDays[3]);
+    void SetCourseDays(students_courseDays[]);
     void SetDegree(DegreeProgram stringDegreeProgram);
 
-    void PrintStudentsData();
+    void print();
     ~Student();
 
 private:
