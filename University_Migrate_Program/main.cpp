@@ -24,16 +24,51 @@ int main()
 
   int maxStudents = 5;
 
-  Roster* classRoster = new Roster(maxStudents);
+  Roster *classRoster = new Roster(maxStudents);
 
   cout << "C867 Scrpiting and Programming Applications" << endl;
   cout << "C++ Student ID:001438671 Antoine Gustave" << endl;
 
   cout << endl;
 
-    for (int i = 0; i < 5; ++i) {
-        classRoster->parseAndAdd(studentData[i]);
+  for (int i = 0; i < maxStudents; i++)
+  {
+    DegreeProgram degrees;
+
+    stringstream stu_data(studentData[i]);
+    string rmstr;	
+    string output[9];
+
+    int a = 0;
+    while(getline(stu_data, rmstr, ',')) {
+	 output[a] = rmstr;
+	 a += 1;
     }
+
+    if (output[8] == "SOFTWARE")
+    {
+        degrees = DegreeProgram::SOFTWARE;
+    }
+
+    else if (output[8] == "NETWORK")
+    {
+        degrees = DegreeProgram::NETWORK;
+    }
+
+
+    else if (output[8] == "SECURITY")
+    {
+        degrees = DegreeProgram::SECURITY;
+    }
+
+    else
+    {
+        cout << "Degree does not exist" << endl;
+    }
+    
+    classRoster->add(output[0], output[1], output[2], output[3], stoi(output[4]), stoi(output[5]), stoi(output[6]), stoi(output[7]), degrees);
+  }
+  
     
     classRoster->printAll();
     classRoster->printInvalidEmails();

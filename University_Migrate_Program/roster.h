@@ -7,6 +7,7 @@
 
 #include <iostream>
 #include <string>
+#include "roster.h"
 #include "student.h"
 #include "degree.h"
 using namespace std;
@@ -18,14 +19,12 @@ public:
   Roster(int maxRosterSize);
   Student** classRosterArray;
   void parseAndAdd(string students_row);
-  void add(string studentID, string students_firstName, string students_lastName, string students_email, int students_age, int students_courseDays, int students_courseDays1, int students_courseDays2, DegreeProgram stringDegreeProgram);
-  bool remove(string studentID);
+  void add(string studentID, string students_firstName, string students_lastName, string students_email, int students_age, int daysInCourse, int daysInCourse1, int daysInCourse2, DegreeProgram stringDegreeProgram);
+  void remove(string studentID);
   void printAll();
   void printAverageDaysInCourse(string studentID);
   void printInvalidEmails();
   void printByDegreeProgram(DegreeProgram stringDegreeProgram);
-
-  Student* GetInfo(int lastInput);
 
   int lastInput;
   int maxRosterSize;

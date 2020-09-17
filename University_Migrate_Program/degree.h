@@ -7,7 +7,6 @@
 
 enum DegreeProgram
 {
-    None,
     SECURITY,
     NETWORK,
     SOFTWARE
