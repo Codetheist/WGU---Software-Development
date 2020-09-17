@@ -1,0 +1,5 @@
+﻿  main.cpp
+  roster.cpp
+  student.cpp
+D:\GitHub\WGU---Software-Development\C867_Assessments\C867_Assessments\student.cpp(117,46): error C3867: 'Student::GetDegree': non-standard syntax; use '&' to create a pointer to member
+  Generating Code...
