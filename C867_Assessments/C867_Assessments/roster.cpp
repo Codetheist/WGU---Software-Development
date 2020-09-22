@@ -3,8 +3,6 @@
 */
 
 #include "roster.h"
-#include "degree.h"
-#include "student.h"
 #include <string>
 #include <iostream>
 
@@ -28,42 +26,27 @@ Roster::Roster (int maxRosterSize)
 
 
  
-void Roster::parseAndAdd(string students_row)
+/*void Roster::parseAndAdd(string students_row)
 {
-}
+}*/
 
 void Roster::add(string studentID, string students_firstName, string students_lastName, string students_email, int students_age, int daysInCourse, int daysInCourse1, int daysInCourse2, DegreeProgram stringDegreeProgram)
 {
     int students_courseDay[3];
     
-    for (int i = 0; i < 3; ++i)
-    {
+    
         students_courseDay[0] = daysInCourse;
         students_courseDay[1] = daysInCourse1;
         students_courseDay[2] = daysInCourse2;
         
-        if (stringDegreeProgram == DegreeProgram::SOFTWARE)
-        {
-            classRosterArray[++lastInput] = new Student(studentID, students_firstName, students_lastName, students_email, students_age, &daysInCourse, stringDegreeProgram);
-        }
-        
-        else if (stringDegreeProgram == DegreeProgram::NETWORK)
-        {
-            classRosterArray[++lastInput] = new Student(studentID, students_firstName, students_lastName, students_email, students_age, &daysInCourse, stringDegreeProgram);
-        }
-
-        else if (stringDegreeProgram == DegreeProgram::SECURITY)
-        {
-            classRosterArray[++lastInput] = new Student(studentID, students_firstName, students_lastName, students_email, students_age, &daysInCourse, stringDegreeProgram);
-        }
-    }
+        classRosterArray[++lastInput] = new Student(studentID, students_firstName, students_lastName, students_email, students_age, students_courseDay, stringDegreeProgram);
 } 
  
 void Roster::remove (string studentID)
 {
     bool isExisted = false;
     
-    for (int i = 0; i < lastInput; ++i)
+    for (int i = 0; i < 5; ++i)
     {
         if (classRosterArray[i]->GetStudentsID () == studentID)
         {

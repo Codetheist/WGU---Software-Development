@@ -1,15 +1,11 @@
+#pragma once
 /*
  * Created by Antoine on 8/8/2020.
 */
 
-#ifndef UNIVERSITY_MIGRATE_PROGRAM_ROSTER_H
-#define UNIVERSITY_MIGRATE_PROGRAM_ROSTER_H
-
 #include <iostream>
 #include <string>
-#include "roster.h"
 #include "student.h"
-#include "degree.h"
 using namespace std;
 
 class Roster
@@ -31,5 +27,3 @@ public:
   
   ~Roster();
 };
-
-#endif //UNIVERSITY_MIGRATE_PROGRAM_ROSTER_H

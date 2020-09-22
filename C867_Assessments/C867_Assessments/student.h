@@ -1,9 +1,7 @@
+#pragma once
 /*
  * Created by Antoine on 8/8/2020.
 */
-
-#ifndef UNIVERSITY_MIGRATE_PROGRAM_STUDENT_H
-#define UNIVERSITY_MIGRATE_PROGRAM_STUDENT_H
 
 #include "degree.h"
 #include <iostream>
@@ -46,5 +44,3 @@ private:
     int students_courseDays[3];
     DegreeProgram stringDegreeProgram;
 };
-
-#endif //UNIVERSITY_MIGRATE_PROGRAM_STUDENT_H

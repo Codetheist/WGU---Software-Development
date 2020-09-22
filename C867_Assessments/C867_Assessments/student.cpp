@@ -9,7 +9,7 @@
 using namespace std;
 
 Student::Student() {
-    studentID = "";
+    /*studentID = "";
     students_firstName = "";
     students_lastName = "";
     students_email = "";
@@ -18,18 +18,21 @@ Student::Student() {
     {
         students_courseDays[i] = 0;
     }
-    stringDegreeProgram = DegreeProgram::SECURITY;
+    stringDegreeProgram = DegreeProgram::SECURITY;*/
 }
 
-Student::Student(string studentID, string students_firstName, string students_lastName, string students_email, int students_age, int *daysInCourse, DegreeProgram stringDegreeProgram)
+Student::Student(string stu_ID, string first_name, string last_name, string stu_email, int stu_age, int *daysInCourse, DegreeProgram degree_prog)
 {
-    SetStudentID(studentID);
-    SetFirstName(students_firstName);
-    SetLastName(students_lastName);
-    SetEmail(students_email);
-    SetAge(students_age);
-    SetDegree(stringDegreeProgram);
-    SetCourseDays(daysInCourse);
+    studentID = stu_ID;
+    students_firstName = first_name;
+    students_lastName = last_name;
+    students_email = stu_email;
+    students_age = stu_age;
+    for (int i = 0; i < 3; ++i)
+    {
+        students_courseDays[i] = daysInCourse[i];
+    }
+    stringDegreeProgram = degree_prog;
 }
 
 //Accessors
@@ -71,27 +74,27 @@ DegreeProgram Student::GetDegree()
 //Mutators
 void Student::SetStudentID(string studentID)
 {
-    string stu_ID = studentID;
+    //studentID;
 }
 
 void Student::SetFirstName(string students_firstName)
 {
-    string stu_firstNames = students_firstName;
+    //students_firstName = s;
 }
 
 void Student::SetLastName(string students_lastName)
 {
-    string stu_lastNames = students_lastName;
+    //string stu_lastNames = students_lastName;
 }
 
 void Student::SetEmail(string students_email)
 {
-    string stu_emails = students_email;
+    //string stu_emails = students_email;
 }
 
 void Student::SetAge(int students_age)
 {
-    int stu_ages = students_age;
+    //students_age = stu_ages;
 }
 
 void Student::SetDegree(DegreeProgram stringDegreeProgram)
@@ -101,9 +104,9 @@ void Student::SetDegree(DegreeProgram stringDegreeProgram)
 
 void Student::SetCourseDays(int *daysInCourse)
 {
-    for(int i = 0; i < 3; ++i) {
+    /*for(int i = 0; i < 3; ++i) {
         students_courseDays[i] = daysInCourse[i];
-    }
+    }*/
 }
 
 void Student::print()
@@ -112,7 +115,7 @@ void Student::print()
     cout << "\t First Name: " << students_firstName << "\t Last Name: " << students_lastName;
     cout << "\t Age: " << students_age << "\t : ";
     cout << "{" << students_courseDays[0] << ", " << students_courseDays[1] << ", " << students_courseDays[2] << "}";
-    cout << " Degree Program: " << stringDegreeProgram << "." << endl;
+    cout << " Degree Program: " << xyz[(int)stringDegreeProgram] << "." << endl;
 }
 
 Student::~Student() {

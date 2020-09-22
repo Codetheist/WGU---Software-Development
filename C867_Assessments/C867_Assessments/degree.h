@@ -1,19 +1,17 @@
+#pragma once
 /*
  * Created by Antoine on 8/8/2020.
 */
+#include <string>
+using namespace std;
 
-#ifndef UNIVERSITY_MIGRATE_PROGRAM_DEGREE_H
-#define UNIVERSITY_MIGRATE_PROGRAM_DEGREE_H
 
 enum class DegreeProgram
 {
-    SECURITY = 0,
-    NETWORK = 1,
-    SOFTWARE = 2
+    SECURITY,
+    NETWORK,
+    SOFTWARE
 };
 
-/*DegreeProgram security = DegreeProgram::SECURITY;
-DegreeProgram network = DegreeProgram::NETWORK;
-DegreeProgram software = DegreeProgram::SOFTWARE;*/
+const static string xyz[] = { "SECURITY", "NETWORK", "SOFTWARE" };
 
-#endif //UNIVERSITY_MIGRATE_PROGRAM_DEGREE_H

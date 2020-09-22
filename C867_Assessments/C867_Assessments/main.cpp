@@ -2,9 +2,7 @@
  * Created by Antoine on 8/8/2020.
 */
 
-#include "student.h"
 #include "roster.h"
-#include "degree.h"
 #include <iostream>
 #include <string>
 #include <sstream>
