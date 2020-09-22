@@ -14,7 +14,6 @@ public:
   Roster();
   Roster(int maxRosterSize);
   Student** classRosterArray;
-  //void parseAndAdd(string students_row);
   void add(string studentID, string students_firstName, string students_lastName, string students_email, int students_age, int daysInCourse, int daysInCourse1, int daysInCourse2, DegreeProgram stringDegreeProgram);
   void remove(string studentID);
   void printAll();
