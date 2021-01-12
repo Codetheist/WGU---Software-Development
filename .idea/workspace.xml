@@ -28,23 +28,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03e46f91-5316-452e-9b08-9d2b5fb2b185" name="Default Changelist" comment="Final Updated WGU C867 Assessment">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/University_Migrate_Program/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/University_Migrate_Program/.idea/University_Migrate_Program.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/University_Migrate_Program/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/University_Migrate_Program/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/University_Migrate_Program/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/University_Migrate_Program/.vscode/launch.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/University_Migrate_Program/Assessment_Program_Requirements.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/University_Migrate_Program/Assessment_Program_Scenario.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/University_Migrate_Program/CMakeLists.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/University_Migrate_Program/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/University_Migrate_Program/degree.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/University_Migrate_Program/main.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/University_Migrate_Program/roster.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/University_Migrate_Program/roster.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/University_Migrate_Program/student.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/University_Migrate_Program/student.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C867_Assessments/.vs/C867_Assessments/v16/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/C867_Assessments/.vs/C867_Assessments/v16/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/C867_Assessments/.vs/C867_Assessments/v16/Browse.VC.db" beforeDir="false" afterPath="$PROJECT_DIR$/C867_Assessments/.vs/C867_Assessments/v16/Browse.VC.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,6 +67,7 @@
       <workItem from="1598661705270" duration="964000" />
       <workItem from="1598923163600" duration="3699000" />
       <workItem from="1600359906341" duration="22000" />
+      <workItem from="1605641168801" duration="610000" />
     </task>
     <task id="LOCAL-00001" summary="WGU C867 Assessment">
       <created>1597273934072</created>
